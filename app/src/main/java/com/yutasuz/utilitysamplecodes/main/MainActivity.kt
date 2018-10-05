@@ -3,7 +3,6 @@ package com.yutasuz.utilitysamplecodes.main
 import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
-import android.support.v7.widget.LinearLayoutCompat
 import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
@@ -52,7 +51,8 @@ class MainActivity : AppCompatActivity() {
 
         fun onBind(clazz: Class<*>){
             itemView.findViewById<TextView>(R.id.name).apply {
-                text = clazz.name
+                val str = clazz.name.split('.')
+                text = str[str.size - 2]
                 setOnClickListener {
                     context.startActivity(Intent(context, clazz))
                 }
