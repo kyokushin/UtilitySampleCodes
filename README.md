@@ -5,7 +5,7 @@
 # 目次
 
 1. アスペクト比を固定したImaveViewが欲しい
-2. **[予告]** 角丸のImaveViewが欲しい
+2. 角丸のImaveViewが欲しい
 
 # 1. アスペクト比を固定したImaveViewが欲しい
 
@@ -23,8 +23,21 @@ https://stackoverflow.com/questions/12311346/how-to-set-fixed-aspect-ratio-for-a
 
 SupportLibraryに追加されて久しいConstraintLayoutを使うことで実現できます。
 またConstraintLayoutを使うことからもわかるように、ImageViewに限らず
-どのようなViewにも適用できる汎用的で応用範囲の広い方法です。
+どのようなViewにも適用できる汎用的で応用範囲の広い方法のひとつです。
 
-# 2. **[予告]** 角丸のImaveViewが欲しい
-次回は角丸のImageViewをImageViewを継承せずに作る方法を紹介します。
-***注意:未実装のため変更する可能があります。***
+# 2. 角丸のImaveViewが欲しい
+
+対象パッケージ名
+**com.yutasuz.utilitysamplecodes.roundedrectview**
+
+前回に続きよくある内容ですが、角丸のImageViewが欲しい時がよくあります。
+これはSupportLibraryに追加されて久しいCardViewを使うことで実現できます。
+
+[Make ImageView fit width of CardView
+](https://stackoverflow.com/questions/27394300/make-imageview-fit-width-of-cardview)
+
+CardViewというように名前にViewがついていますが実態はLayoutです。
+ゆえに前回同様、ImageViewに限らずどのようなViewにも適用できる汎用的で
+応用範囲の広い方法のひとつです。
+たとえばMaps SDK for AndroidのMapViewをCardView内の要素とすることで
+角丸の地図を表示することが可能です。

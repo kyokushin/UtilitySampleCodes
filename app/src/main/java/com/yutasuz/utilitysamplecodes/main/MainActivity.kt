@@ -10,6 +10,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import com.yutasuz.utilitysamplecodes.R
 import com.yutasuz.utilitysamplecodes.fixaspectratio.FixAspectRratioActivity
+import com.yutasuz.utilitysamplecodes.roundedrectview.RoundedRectViewActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -23,6 +24,7 @@ class MainActivity : AppCompatActivity() {
 
         adapter.activities.apply {
             add(FixAspectRratioActivity::class.java)
+            add(RoundedRectViewActivity::class.java)
         }
 
         recycler_view.apply {

@@ -22,6 +22,10 @@
         <activity
             android:name=".fixaspectratio.FixAspectRratioActivity"
             android:label="@string/title_activity_fix_aspect_rratio"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".roundedrectview.RoundedRectViewActivity"
+            android:label="@string/title_activity_rounded_rect_view"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
